@@ -1,7 +1,9 @@
 <div class="example-box2">
-    {{todo.description}}
-
-    <div *ngIf="selected">
+        {{todo.description}}
+        <!-- 
+            selected tells about if we are on current todo item
+         -->
+    <div *ngIf="selected" style="display: flex; flex-direction: row;">
         <svg style="cursor: pointer; margin-right: 16px" width="1.5em" height="1.5em" viewBox="0 0 16 16"
             class="bi bi-check2-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd"
